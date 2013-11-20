@@ -1,0 +1,35 @@
+body{
+	font-family:Arial,Dotum,sans-serif;
+	background: #F2F2F2;
+}
+.container{
+}
+.text{
+	margin-left: 25px;
+}
+.images{
+	width: 1083px;
+	margin: 10% auto;
+	padding: 25px;
+	background: white;
+}
+
+p{
+	font-size: 8pt;
+}
+
+.image-area{
+	width: 271px;
+	height: 141px;
+	display: inline-block;
+	margin-bottom: -5px;
+}
+
+.images .image-area:not(:last-child){
+	margin-right: -5px;
+
+}
+
+.overlay{
+	position: absolute;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+	Jefferson Lam
+	11-19-13
+	jQuery : Image Front/Back
+-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery : Image Front/Back</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<link rel="stylesheet" type="text/css" href="global.css">
+
+	<!--jQuery-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+
+    		$('.image-area').hover(
+		        function () {
+		           $(this).children("img").eq(1).fadeOut(250);
+		        }, 
+		        function () {
+		           $(this).children("img").eq(1).fadeIn(250);
+		        }
+    		);
+    	});
+    	
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="images">
+			<div class="text">
+				<h1>Leica</h1>
+				<p>Leica engineers are innovative specialists with a keen sense of our end-user's needs and wishes. We know what enthusiasts and professional photographers are looking for, and are committed to using our know-how in an ongoing effort to provide new products that enhance the pleasure of photography and take it to new levels.</p>
+			</div>
+			<div class="image-area">
+				<img src="back1.jpg" class="overlay">
+				<img src="front1.jpg" class="overlay">
+			</div>
+			<div class="image-area">
+				<img src="back2.jpg" class="overlay">
+				<img src="front2.jpg" class="overlay">
+			</div>
+			<div class="image-area">
+				<img src="back3.jpg" class="overlay">
+				<img src="front3.jpg" class="overlay">
+			</div>
+			<div class="image-area">
+				<img src="back4.jpg" class="overlay">
+				<img src="front4.jpg" class="overlay">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
